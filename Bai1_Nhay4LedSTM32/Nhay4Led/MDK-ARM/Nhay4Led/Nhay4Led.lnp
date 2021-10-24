@@ -1,0 +1,25 @@
+--cpu Cortex-M4.fp
+"nhay4led\startup_stm32f407xx.o"
+"nhay4led\main.o"
+"nhay4led\stm32f4xx_it.o"
+"nhay4led\stm32f4xx_hal_msp.o"
+"nhay4led\stm32f4xx_hal_tim.o"
+"nhay4led\stm32f4xx_hal_tim_ex.o"
+"nhay4led\stm32f4xx_hal_rcc.o"
+"nhay4led\stm32f4xx_hal_rcc_ex.o"
+"nhay4led\stm32f4xx_hal_flash.o"
+"nhay4led\stm32f4xx_hal_flash_ex.o"
+"nhay4led\stm32f4xx_hal_flash_ramfunc.o"
+"nhay4led\stm32f4xx_hal_gpio.o"
+"nhay4led\stm32f4xx_hal_dma_ex.o"
+"nhay4led\stm32f4xx_hal_dma.o"
+"nhay4led\stm32f4xx_hal_pwr.o"
+"nhay4led\stm32f4xx_hal_pwr_ex.o"
+"nhay4led\stm32f4xx_hal_cortex.o"
+"nhay4led\stm32f4xx_hal.o"
+"nhay4led\stm32f4xx_hal_exti.o"
+"nhay4led\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "Nhay4Led\Nhay4Led.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Nhay4Led.map" -o Nhay4Led\Nhay4Led.axf
